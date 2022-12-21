@@ -5,12 +5,17 @@ body{
     padding: 0;
 }
 
+/* =================== Left Pane ============================== */
+
 #handles{
     border: 2px solid black;
     height: 89vh;
     width: 40%;
     float: left;
 }
+
+
+/* =================== Right Pane ============================== */
 
 #explan{
     border: 2px solid black;
@@ -19,6 +24,8 @@ body{
     float: right;
 }
 
+
+/* =================== Footer ==================================== */
 footer{
     border: 2px solid black;
     bottom: 0px;
