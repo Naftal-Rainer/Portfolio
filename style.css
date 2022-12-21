@@ -3,6 +3,7 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* =================== Left Pane ============================== */
@@ -31,10 +32,34 @@ body{
 
 
 #pages{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 70%;
-    width: 80%;
+    width: 100%;
     margin: auto;
+    padding: 20px;
+}
+
+.social-media{
+
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.social-media img{
+    height: 50px;
+    width: 50px;
+}
+
+.social-media a{
+    text-decoration: none;
+    /* padding: 10px; */
+    margin: auto;
+
+
 }
 
 
