@@ -9,18 +9,18 @@ body{
 /* =================== Left Pane ============================== */
 
 #handles{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 89vh;
     width: 40%;
     float: left;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
 }
 
 #profile-pic{
-    border: 2px solid black;
+    border: 1px solid black;
     width: 30%;
     height: 30%;
     margin: auto;
@@ -36,12 +36,11 @@ body{
     height: 70%;
     width: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 40px;
 }
 
 .social-media{
 
-    margin-top: 10px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -58,6 +57,7 @@ body{
     text-decoration: none;
     /* padding: 10px; */
     margin: auto;
+    margin-top: 40px;
 
 
 }
@@ -70,6 +70,35 @@ body{
     height: 89vh;
     width: 59%;
     float: right;
+    padding: 5%;
+    background-color: black;
+}
+
+#descr{
+    width: 90%;
+    border: 1px solid black;
+    margin: auto;
+    min-height: 40vh;
+    /* align-content: center; */
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+#descr h2{
+    color: orange;
+    
+}
+
+#descr h2 span{
+    color: red;
+    font-size: 40px;
+    
+}
+
+#descr p{
+    font-size: 20px;
+    
 }
 
 
@@ -79,7 +108,7 @@ footer{
     bottom: 0px;
     height: 11vh;
     clear: both;
-    background-color: rebeccapurple;
+    background-color: rgba(21, 20, 22, 0.733);
     position: fixed;
     width: 100%;
 }
