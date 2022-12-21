@@ -1,7 +1,10 @@
-//  = document.getElementsByClassName('para')
-// console.log(para)
+function hover(obj){
+    obj.style.backgroundColor ='white';
+}
 
-
+function hoverback(obj){
+    obj.style.backgroundColor ='black';
+}
 
 setInterval(mySliderDisplay, 7000);
 
@@ -17,3 +20,4 @@ function mySliderDisplay() {
         i = 0;
     }
 }
+
