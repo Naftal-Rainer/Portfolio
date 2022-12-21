@@ -79,6 +79,25 @@ body{
 
 }
 
+#AdditionalButtons{
+    border: 2px solid black;
+    /* width: 40%; */
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#AdditionalButtons a{
+    text-decoration: none;
+    color: orangered;
+    border: 2px solid white;
+    padding: 12px;
+    border-radius: 5px;
+
+}
+
 /* =================== Right Pane ============================== */
 
 #explan{
@@ -115,6 +134,10 @@ body{
 #descr p{
     font-size: 20px;
     
+}
+
+#bio{
+    display: none;
 }
 
 
