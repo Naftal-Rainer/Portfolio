@@ -1,14 +1,30 @@
 body{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 #handles{
     border: 2px solid black;
-    
+    height: 89vh;
+    width: 40%;
+    float: left;
 }
 
 #explan{
     border: 2px solid black;
-    
+    height: 89vh;
+    width: 59%;
+    float: right;
+}
+
+footer{
+    border: 2px solid black;
+    bottom: 0px;
+    height: 11vh;
+    clear: both;
+    background-color: rebeccapurple;
+    position: fixed;
+    width: 100%;
 }
