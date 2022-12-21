@@ -12,6 +12,29 @@ body{
     height: 89vh;
     width: 40%;
     float: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#profile-pic{
+    border: 2px solid black;
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    border-radius: 90px;
+    background-image: url('./images/Profile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#pages{
+    border: 2px solid black;
+    height: 70%;
+    width: 80%;
+    margin: auto;
 }
 
 
