@@ -16,7 +16,7 @@ body{
 
 #handles{
     /* border: 2px solid black; */
-    height: 89vh;
+    height: 90vh;
     width: 40%;
     float: left;
     justify-content: center;
@@ -112,7 +112,7 @@ body{
 
 #explan{
     border: 2px solid black;
-    height: 89vh;
+    min-height: 90vh;
     width: 59%;
     float: right;
     padding: 5%;
@@ -150,10 +150,21 @@ body{
     display: none;
 }
 
+#additionalButtons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 70%;
+}
+
+#additionalButtons a{
+    margin: 20px;
+}
 
 /* =================== Footer ==================================== */
 footer{
-    border: 2px solid black;
+    border: 1px solid black;
     bottom: 0px;
     height: vh;
     clear: both;
@@ -164,4 +175,203 @@ footer{
     text-align: center;
     padding: 10px;
     font-size: 20px;
+}
+
+/*================================ Responsiveness =================================================== */
+@media screen and (max-width:660px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+/*================================= left panel ======================================= */
+
+    /* #pages{
+        padding: 20px;
+    } */
+
+    #handles{
+        float: none;
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 10%;
+    }
+
+    #profile-pic{
+        margin-top: 10px;
+        height: 30%;
+        width: 20%;
+    }
+
+
+/*================================== Right Panel  =================================== */
+
+    #explan{
+        float: none;
+        width: 100%;
+    }
+
+    #descr{
+        width: 100%;
+    }
+
+    #additionalButtons{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    #additionalButtons a{
+        margin: 5px;
+        
+    }
+
+
+    
+    .media{
+        margin: 30px 0px 25px 0px;
+    }
+
+    .media img{
+        height: 40px;
+        width: 40px;
+        border: 2px solid white;
+        padding: 2px;
+        border-radius: 25px;
+    }
+
+
+    .about{
+        color: white;
+        float: left;
+        
+    }
+
+    .about h4{
+        margin: 3px;
+        text-decoration: underline;
+    }
+
+    .about ul li{
+        padding: 10px;
+        list-style: none;
+    }
+
+
+    .about a{
+        text-decoration: none;
+        padding: 5px;
+        color: white;
+
+    }
+
+    .message{
+        flex-grow: 0.5;
+    }
+
+    .message h4{
+        margin: 3px;
+        color: white;
+        text-decoration: underline;
+        
+    }
+
+    input[type=text], input[type=email],input[type=password], textarea {
+        width: 80%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        display: block;
+        margin: 5px;
+    }
+
+
+
+  button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+
+    nav ul {
+        display: none;
+        background-color: #5f5b5b;
+    }
+
+    nav ul li{
+        display: block;
+        
+    }
+
+    nav ul li a{
+        width: 100%;
+    }
+
+    nav .active{
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+    #reg{
+        border: none;
+        color: white;
+    }
+
+    .intro{
+        /* display: block; */
+        width: 100%;
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+    #hide3{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    } 
+
+    .desc {
+        width: 600px;
+        margin: 0px;
+        padding: 10px;
+        text-align: justify;
+        font-size: 16px;
+        font-weight: 500;    
+    }
+
+    #image1{
+        height: 200px;
+        margin: auto;
+        width: 400px;
+    }
+
+    #image2{
+        height: 200px;
+        margin: auto;
+        width: 400px;
+    }
+
+   .img{
+       display: flex;
+       flex-direction: column;
+   }
+
+   .img{
+       width: 80%;
+       margin: 05% 15%;
+   }
+
+    
 }

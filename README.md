@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-![Index page](images\Land.jpg)
+<!-- ![Index page](images\Land.jpg) -->
 
 
 
