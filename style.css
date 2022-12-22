@@ -45,6 +45,10 @@ body{
     padding: 40px;
 }
 
+#pages hr{
+    border: 1px solid blue;
+}
+
 .social-media{
 
     display: flex;
