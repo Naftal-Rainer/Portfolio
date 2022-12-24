@@ -12,11 +12,11 @@ body{
     box-sizing: border-box;
 }
 
-/* =================== Left Pane ============================== */
+/* =================== First Left Pane ============================== */
 
 #handles{
     /* border: 2px solid black; */
-    height: 90vh;
+    height: 60vh;
     width: 40%;
     float: left;
     justify-content: center;
@@ -27,8 +27,8 @@ body{
 
 #profile-pic{
     border: 1px solid black;
-    width: 30%;
-    height: 30%;
+    width: 150px;
+    height: 200px;
     margin: auto;
     border-radius: 90px;
     background-image: url('./images/Profile.png');
@@ -48,6 +48,26 @@ body{
 #pages hr{
     border: 1px solid blue;
 }
+
+
+
+
+/* =================== Second Left Pane ============================== */
+
+#socials{
+    /* border: 2px solid black; */
+    margin-top: 50vh;
+    margin-left: 0;
+    position: absolute;
+    height: 45vh;
+    width: 40%;
+    float: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
 
 .social-media{
 
@@ -89,25 +109,6 @@ body{
 
 }
 
-#additionalButtons{
-    border: 2px solid black;
-    /* width: 40%; */
-    margin: auto;
-    text-align: center;
-    background-color: black;
-    font-size: 20px;
-    border-radius: 5px;
-}
-
-#additionalButtons a{
-    text-decoration: none;
-    color: orangered;
-    border: 2px solid white;
-    padding: 12px;
-    border-radius: 5px;
-
-}
-
 /* =================== Right Pane ============================== */
 
 #explan{
@@ -142,7 +143,7 @@ body{
 }
 
 #descr p{
-    font-size: 20px;
+    font-size: 25px;
     
 }
 
@@ -156,9 +157,21 @@ body{
     flex-wrap: wrap;
     margin: auto;
     width: 70%;
+    border: 2px solid black;
+    /* width: 40%; */
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
 #additionalButtons a{
+    text-decoration: none;
+    color: orangered;
+    border: 2px solid white;
+    padding: 12px;
+    border-radius: 5px;
     margin: 20px;
 }
 
@@ -182,33 +195,51 @@ footer{
     body{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
-/*================================= left panel ======================================= */
 
-    /* #pages{
-        padding: 20px;
-    } */
+/*================================= First left panel ======================================= */
+
+/* #pages{
+    padding: 20px;
+} */
 
     #handles{
         float: none;
         width: 100%;
         padding: 20px;
-        margin-bottom: 10%;
+        /* margin-bottom: 10%; */
+        /* border: 2px solid black; */
     }
 
     #profile-pic{
-        margin-top: 10px;
-        height: 30%;
-        width: 20%;
+        margin-top: 20px;
+        height: 350px;
+        width: 150px;
     }
 
+/*================================= Second left panel ======================================= */
+
+    #socials{
+        order: 3;
+        position: relative;
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        /* height: 80vh; */
+        /* border: 2px solid black; */
+    }
 
 /*================================== Right Panel  =================================== */
 
     #explan{
         float: none;
         width: 100%;
+        order: 2;
+        /* margin-top: 0; */
+    /* border: 2px solid yellow; */
     }
 
     #descr{
@@ -218,6 +249,8 @@ footer{
     #additionalButtons{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-content: space-around;
     }
 
 
@@ -226,152 +259,14 @@ footer{
         
     }
 
+/*================================= Footer ======================================= */
 
-    
-    .media{
-        margin: 30px 0px 25px 0px;
-    }
-
-    .media img{
-        height: 40px;
-        width: 40px;
-        border: 2px solid white;
-        padding: 2px;
-        border-radius: 25px;
-    }
-
-
-    .about{
-        color: white;
-        float: left;
-        
-    }
-
-    .about h4{
-        margin: 3px;
-        text-decoration: underline;
-    }
-
-    .about ul li{
-        padding: 10px;
-        list-style: none;
-    }
-
-
-    .about a{
-        text-decoration: none;
-        padding: 5px;
-        color: white;
-
-    }
-
-    .message{
-        flex-grow: 0.5;
-    }
-
-    .message h4{
-        margin: 3px;
-        color: white;
-        text-decoration: underline;
-        
-    }
-
-    input[type=text], input[type=email],input[type=password], textarea {
-        width: 80%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-        display: block;
-        margin: 5px;
-    }
-
-
-
-  button[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: 1px solid white;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-
-
-    nav ul {
-        display: none;
-        background-color: #5f5b5b;
-    }
-
-    nav ul li{
-        display: block;
-        
-    }
-
-    nav ul li a{
-        width: 100%;
-    }
-
-    nav .active{
-        display: flex;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        
-    }
-
-    #reg{
-        border: none;
-        color: white;
-    }
-
-    .intro{
-        /* display: block; */
-        width: 100%;
+    footer{
+        margin-top: 20px;
         position: relative;
-        padding-bottom: 30px;
+        order: 4;
+        border: 0;
     }
-
-    #hide3{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-    } 
-
-    .desc {
-        width: 600px;
-        margin: 0px;
-        padding: 10px;
-        text-align: justify;
-        font-size: 16px;
-        font-weight: 500;    
-    }
-
-    #image1{
-        height: 200px;
-        margin: auto;
-        width: 400px;
-    }
-
-    #image2{
-        height: 200px;
-        margin: auto;
-        width: 400px;
-    }
-
-   .img{
-       display: flex;
-       flex-direction: column;
-   }
-
-   .img{
-       width: 80%;
-       margin: 05% 15%;
-   }
 
     
 }

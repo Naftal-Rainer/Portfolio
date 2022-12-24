@@ -20,4 +20,3 @@ function mySliderDisplay() {
         i = 0;
     }
 }
-
