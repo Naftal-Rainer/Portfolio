@@ -36,10 +36,9 @@ exp.addEventListener('click', () => {
     var addButt = document.getElementById('additionalButtons');
     // addButt.style.position = 'absolute';
     addButt.style.flexDirection = 'column';
-    // addButt.style.width = '12%';
+    addButt.style.marginTop = '12%';
     addButt.style.width = '10%';
     addButt.style.marginLeft = '87%';
-    // addButt.style.border = '1px solid white';
 
 
     var butElements = addButt.getElementsByTagName('a')
@@ -54,6 +53,11 @@ exp.addEventListener('click', () => {
     var newA = document.createElement('a');
     addButt.insertBefore(newA, butElements[0]);
     newA.innerHTML = 'Home'
+
+    // Set mouse position attributes
+    butElements[0].setAttribute('onmouseover','hover(this)');
+    butElements[0].setAttribute('onmouseout','hoverback(this)');
+    // console.log(butElements[0])
 
 });
 
