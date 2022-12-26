@@ -43,14 +43,17 @@ exp.addEventListener('click', () => {
 
 
     var butElements = addButt.getElementsByTagName('a')
-    // butElements.style.marginBottom = '10%';
-    // butElements.style
 
     // console.log(butElements)
     for (i=0; i<butElements.length; i++) {
         // butElements[i].style.width = '40%'
         butElements[i].style.marginBottom = '10%';
     }
+
+    // Creating new element
+    var newA = document.createElement('a');
+    addButt.insertBefore(newA, butElements[0]);
+    newA.innerHTML = 'Home'
 
 });
 
