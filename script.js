@@ -28,20 +28,30 @@ var exp = butt[1]
 
 exp.addEventListener('click', () => {
     var descr = document.getElementById('descr');
+    var explan = document.getElementById('explan');
+    explan.style.border = '3px solid yellow';
     descr.style.display = 'none';
+
+
     var addButt = document.getElementById('additionalButtons');
-    addButt.style.position = 'absolute';
+    // addButt.style.position = 'absolute';
     addButt.style.flexDirection = 'column';
-    addButt.style.width = '8%';
-    // addButt.style.float = 'right';
-    // addButt.style.justifyItems = 'flex-end';
-    // addButt.style.margin = 'auto';
-    addButt.style.border = '1px solid white';
+    // addButt.style.width = '12%';
+    addButt.style.width = '10%';
+    addButt.style.marginLeft = '87%';
+    // addButt.style.border = '1px solid white';
 
 
     var butElements = addButt.getElementsByTagName('a')
-    // butElements.style.width = '30%';
-    // butElements.position = 'absolute';
+    // butElements.style.marginBottom = '10%';
+    // butElements.style
+
+    // console.log(butElements)
+    for (i=0; i<butElements.length; i++) {
+        // butElements[i].style.width = '40%'
+        butElements[i].style.marginBottom = '10%';
+    }
+
 });
 
 
