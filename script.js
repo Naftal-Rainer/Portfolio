@@ -29,17 +29,18 @@ var exp = butt[1]
 exp.addEventListener('click', () => {
     var descr = document.getElementById('descr');
     var explan = document.getElementById('explan');
-    explan.style.border = '3px solid yellow';
+    // explan.style.border = '3px solid yellow';
     descr.style.display = 'none';
 
 
     var addButt = document.getElementById('additionalButtons');
-    // addButt.style.position = 'absolute';
+    addButt.style.position = 'absolute';
     addButt.style.flexDirection = 'column';
-    addButt.style.marginTop = '12%';
+    // addButt.style.marginTop = '5%';
     addButt.style.width = '10%';
-    addButt.style.marginLeft = '87%';
-
+    addButt.style.marginLeft = '42%';
+    // addButt.style.position = 'absolute';
+    addButt.top = '10%';
 
     var butElements = addButt.getElementsByTagName('a')
 
@@ -57,8 +58,13 @@ exp.addEventListener('click', () => {
     // Set mouse position attributes
     butElements[0].setAttribute('onmouseover','hover(this)');
     butElements[0].setAttribute('onmouseout','hoverback(this)');
-    // console.log(butElements[0])
 
+    // Add experience content
+    var exp = document.getElementById('exp')
+    exp.style.display = 'inline-block';
+    exp.style.padding = '20px';
+    exp.style.marginTop = '0px';
+    // exp.style.border = '1px solid yellow';
 });
 
 

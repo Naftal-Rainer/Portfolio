@@ -131,12 +131,12 @@ body{
     text-align: center;
 }
 
-#descr h2{
+.sect_title{
     color: orange;
-    
+    text-align: center;
 }
 
-#descr h2 span{
+.sect_title span{
     color: red;
     font-size: 40px;
     
@@ -173,6 +173,20 @@ body{
     padding: 12px;
     border-radius: 5px;
     margin: 20px;
+}
+
+#exp{
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#exp h4 span{
+    color: cyan;
+}
+
+#exp p{
+    color: lemonchiffon;
 }
 
 /* =================== Footer ==================================== */
