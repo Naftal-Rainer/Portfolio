@@ -34,12 +34,12 @@ exp.addEventListener('click', () => {
 
 
     var addButt = document.getElementById('additionalButtons');
-    addButt.style.position = 'absolute';
+    addButt.style.position = 'fixed';
     addButt.style.flexDirection = 'column';
-    // addButt.style.marginTop = '5%';
+    addButt.style.marginTop = '5%';
     addButt.style.width = '10%';
     addButt.style.marginLeft = '42%';
-    // addButt.style.position = 'absolute';
+    addButt.style.backgroundColor = '#f5f5dc00';
     addButt.top = '10%';
 
     var butElements = addButt.getElementsByTagName('a')
