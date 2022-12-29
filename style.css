@@ -34,6 +34,7 @@ body{
     background-image: url('./images/Profile.png');
     background-size: cover;
     background-repeat: no-repeat;
+    /* background-attachment: fixed; */
 }
 
 
@@ -189,6 +190,12 @@ body{
     color: lemonchiffon;
 }
 
+/*================================= Projects ======================================= */
+
+    #projects{
+        display: none;
+    }
+
 /* =================== Footer ==================================== */
 footer{
     border: 1px solid black;
@@ -236,7 +243,7 @@ footer{
 /*================================= Second left panel ======================================= */
 
     #socials{
-        order: 3;
+        order: 4;
         position: relative;
         float: none;
         width: 100%;
@@ -252,6 +259,7 @@ footer{
         float: none;
         width: 100%;
         order: 2;
+        min-height: 90vh;
         /* margin-top: 0; */
     /* border: 2px solid yellow; */
     }
@@ -273,12 +281,57 @@ footer{
         
     }
 
+/*================================= Projects ======================================= */
+
+    #projects{
+        /* margin-top: 20px; */
+        display: inline-block;
+        /* position: relative; */
+        order: 3;
+        padding: 20px;
+        border: 0;
+    }
+
+    #projects p{
+        color: gray;
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .projo{
+        margin: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        min-height: 70px;
+    }
+
+    .view{
+        border: 1px solid rgb(26, 25, 25);
+        width: 30%;
+        padding: 10px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .view a{
+        font-style: italic;
+        text-decoration: none;
+        font-weight: bold;
+        color: brown;
+        text-align: center;
+    }
+
+    .projo:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+      }
+
 /*================================= Footer ======================================= */
 
     footer{
         margin-top: 20px;
         position: relative;
-        order: 4;
+        order: 5;
         border: 0;
     }
 

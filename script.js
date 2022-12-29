@@ -39,35 +39,57 @@ exp.addEventListener('click', () => {
     addButt.style.marginTop = '5%';
     addButt.style.width = '10%';
     addButt.style.marginLeft = '42%';
+    addButt.style.border = 'none';
     addButt.style.backgroundColor = '#f5f5dc00';
     addButt.top = '10%';
 
     var butElements = addButt.getElementsByTagName('a')
 
-    // console.log(butElements)
-    for (i=0; i<butElements.length; i++) {
-        // butElements[i].style.width = '40%'
-        butElements[i].style.marginBottom = '10%';
-    }
-
+  
     // Creating new element
     var newA = document.createElement('a');
     addButt.insertBefore(newA, butElements[0]);
     newA.innerHTML = 'Home'
 
-    // Set mouse position attributes
-    butElements[0].setAttribute('onmouseover','hover(this)');
-    butElements[0].setAttribute('onmouseout','hoverback(this)');
-
-    // Add experience content
+     // Add experience content
     var exp = document.getElementById('exp')
     exp.style.display = 'inline-block';
     exp.style.padding = '20px';
     exp.style.marginTop = '0px';
     // exp.style.border = '1px solid yellow';
+
+    // Set mouse position attributes
+    butElements[0].setAttribute('onmouseover','hover(this)');
+    butElements[0].setAttribute('onmouseout','hoverback(this)');
+    
+    butElements[0].addEventListener('click', () => {
+        exp.style.display = 'none';
+        descr.style.display = 'inline-block';
+        // addButt.style.border = '2px solid red';
+        addButt.style.display = 'flex';
+        addButt.style.flexDirection = 'row';
+        addButt.style.width = '100%';
+        addButt.style.margin = 'auto';
+        // addButt.style.marginLeft = '0';
+        // addButt.style.marginTop = '0';
+
+        var remA = addButt.removeChild(butElements[0])
+        // console.log(butElements[0])
+    });
+
+   
 });
 
 
-// for (i = 0; i < exp.length; i++) {
-//     console.log(exp[i].textContent);`
-// }
+window.addEventListener('load', () => {
+    startQueries();
+})
+
+const startQueries = () => {
+    const mediaQueryNew = matchMedia('(max-width:660px)')
+    if(mediaQueryNew.matches){
+        console.log('Matched!!')
+        var explan = document.getElementById('explan')
+        // explan.style.minHeight = '100%'
+    }
+};
