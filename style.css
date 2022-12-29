@@ -94,6 +94,26 @@ body{
 
 }
 
+#socials .tooltiptext {
+    visibility: hidden;
+    width: 90px;
+    background-color: rgb(17, 17, 17);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    margin-left: -15%;
+  }
+
+  #socials:hover .tooltiptext {
+    visibility: visible;
+  }
+
 #mail{
     border: 2px solid black;
     width: 40%;
@@ -253,6 +273,26 @@ footer{
         /* border: 2px solid black; */
     }
 
+    #socials .tooltiptext {
+        visibility: hidden;
+        width: 90px;
+        background-color: rgb(17, 17, 17);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: -2px;
+        margin-left: -15%;
+      }
+    
+      #socials:hover .tooltiptext {
+        visibility: visible;
+      }
+
 /*================================== Right Panel  =================================== */
 
     #explan{
@@ -324,7 +364,24 @@ footer{
 
     .projo:hover {
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-      }
+    }
+
+    #more{
+        margin: 20px;
+        width: 100%;
+        text-align: right;
+        padding: 20px;
+        /* align-items: end; */
+    }
+    
+    #more a{
+        font-style: italic;
+        text-decoration: none;
+        color: yellowgreen;
+        font-weight: bolder;
+
+
+    }
 
 /*================================= Footer ======================================= */
 

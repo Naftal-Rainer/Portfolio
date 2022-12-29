@@ -6,7 +6,7 @@ function hoverback(obj){
     obj.style.backgroundColor ='black';
 }
 
-setInterval(mySliderDisplay, 7000);
+setInterval(mySliderDisplay, 6000);
 
 let i = 0
 function mySliderDisplay() {
