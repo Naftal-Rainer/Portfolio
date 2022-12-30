@@ -216,13 +216,20 @@ body{
         display: none;
     }
 
+    .projo:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+
+
 /* =================== Footer ==================================== */
 footer{
-    border: 1px solid black;
+    border-top: 1px solid white;
+    /* border: 1px solid black; */
     bottom: 0px;
     height: vh;
     clear: both;
-    background-color: rgba(21, 20, 22, 0.733);
+    background-color: black;
+    /* background-color: rgba(21, 20, 22, 0.733); */
     position: fixed;
     width: 100%;
     color: white;
@@ -313,6 +320,7 @@ footer{
         flex-direction: row;
         justify-content: center;
         align-content: space-around;
+        display: none;
     }
 
 
