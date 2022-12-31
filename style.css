@@ -23,6 +23,9 @@ body{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    /* position: fixed; */
+    /* z-index: 999; */
+    /* background-color: white; */
 }
 
 #profile-pic{
@@ -71,7 +74,6 @@ body{
 
 
 .social-media{
-
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -217,6 +219,49 @@ body{
     }
 
     .projo:hover {
+        box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
+        /* background-color: rgba(0, 140, 186, 0.5); */
+    }
+
+    .proj_img{
+        width:100%;
+        /* height:auto; */
+        height:35%;
+        border:0;
+        /* margin: auto; */
+    }
+
+    .view{
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .view a{
+        border: 1px solid white;
+        border-radius: 4px;
+        /* background-color: rgba(0, 140, 186, 1); */
+        margin: 10px;
+        width: 90%;
+        height: 30%;
+        padding: 5px;
+        font-style: italic;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+
+    .view a:hover{
+        background-color: white;
+        color: black;
+        text-decoration: none;
+    }
+
+    .projo:hover {
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     }
 
@@ -257,6 +302,7 @@ footer{
         float: none;
         width: 100%;
         padding: 20px;
+        position: relative;
         /* margin-bottom: 10%; */
         /* border: 2px solid black; */
     }
@@ -306,7 +352,7 @@ footer{
         float: none;
         width: 100%;
         order: 2;
-        min-height: 90vh;
+        min-height: 70vh;
         /* margin-top: 0; */
     /* border: 2px solid yellow; */
     }
@@ -354,20 +400,51 @@ footer{
         min-height: 70px;
     }
 
+    .projo h5{
+        /* color: aqua; */
+        font-weight: bold;
+    }
+
+    /* .projo hr{
+        border:1px solid aquamarine;
+    } */
+
+    .proj_img{
+        width:100%;
+        /* height:auto; */
+        height:10%;
+        border:0;
+        /* margin: auto; */
+    }
+
     .view{
-        border: 1px solid rgb(26, 25, 25);
-        width: 30%;
+        width: 100%;
         padding: 10px;
         margin: auto;
         align-items: center;
+        display: flex;
+        flex-direction: row;
     }
 
     .view a{
+        /* border: 1px solid rgb(26, 25, 25); */
+        border-radius: 4px;
+        background-color: rgba(0, 140, 186, 1);
+        margin: 10px;
+        width: 90%;
+        height: 30%;
+        padding: 5px;
         font-style: italic;
         text-decoration: none;
         font-weight: bold;
-        color: brown;
+        color: white;
         text-align: center;
+    }
+
+    .view a:hover{
+        background-color: black;
+        text-decoration: none;
+        color: white;
     }
 
     .projo:hover {

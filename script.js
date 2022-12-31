@@ -152,9 +152,9 @@ proj.addEventListener('click', () => {
 
 
         var view = projo[i].getElementsByClassName('view')[0]
-        view.style.border = '1px solid white';
-        view.style.width = '30%';
-        view.style.padding = '3px';
+        // view.style.border = '1px solid white';
+        // view.style.width = '30%';
+        // view.style.padding = '3px';
         view.style.margin = 'auto';
         view.style.alignItems = 'center';
 
@@ -162,7 +162,7 @@ proj.addEventListener('click', () => {
         viewA.style.fontStyle = 'italic';
         viewA.style.textDecoration = 'none';
         viewA.style.fontWeight = 'bold';
-        viewA.style.color = 'brown';
+        // viewA.style.color = 'brown';
         viewA.style.textAlign = 'center';
     }    
 
@@ -175,11 +175,15 @@ proj.addEventListener('click', () => {
      addButt.style.border = 'none';
      addButt.style.backgroundColor = '#f5f5dc00';
      addButt.top = '10%';
-
-  
+    
     // Creating new element
     var newA = document.createElement('a');
+    newA.style.backgroundColor = 'black';
     var butElements = addButt.getElementsByTagName('a')
+
+    for (let i=0; i< butElements.length; i++){
+        butElements[i].style.backgroundColor = 'black';
+    }
 
     addButt.insertBefore(newA, butElements[0]);
     newA.innerHTML = 'Home'
