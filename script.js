@@ -80,6 +80,17 @@ var exp = butt[1]
    
 // });
 
+document.addEventListener('DOMContentLoaded', () => {
+    socialsMargingTop()
+})
+
+window.addEventListener('resize', () => {
+    socialsMargingTop()
+    if(innerHeight>innerWidth) {
+        document.getElementById('socials').style.marginTop = '0px'
+    }
+});
+
 
 window.addEventListener('load', () => {
     startQueries();
@@ -219,3 +230,16 @@ proj.addEventListener('click', () => {
 butt[2].addEventListener('click', () => {
     window.open('Naftal Rainer Resume.pdf', '_blank');
 })
+
+function socialsMargingTop() {
+    
+    if(innerWidth>innerHeight) {
+        let socials  = document.getElementById('socials')
+        console.log(socials.previousElementSibling.offsetHeight+'px')
+        socials.style.marginTop = socials.previousElementSibling.offsetHeight + 'px'
+    }
+}
+
+// document.querySelectorAll('.tooltiptext').forEach( tooltip => {
+    
+// })
