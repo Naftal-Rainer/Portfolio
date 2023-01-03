@@ -132,6 +132,21 @@ body{
 
 }
 
+#phone{
+    width: 100%;
+    /* margin-top: 10%; */
+}
+
+#phone p{
+text-align: center;
+font-weight: bold;
+color: brown;
+}
+
+#phone p span{
+color: black;
+}
+
 /* =================== Right Pane ============================== */
 
 #explan{
@@ -322,6 +337,7 @@ footer{
         width: 100%;
         margin-top: 10px;
         padding-bottom: 20px;
+        top: 130vh;
         /* height: 80vh; */
         /* border: 2px solid black; */
     }
@@ -346,6 +362,20 @@ footer{
         visibility: visible;
       }
 
+      #phone{
+        width: 100%;
+        margin-top: 10%;
+      }
+
+      #phone p{
+        text-align: center;
+        font-weight: bold;
+        color: brown;
+      }
+
+      #phone p span{
+        color: black;
+      }
 /*================================== Right Panel  =================================== */
 
     #explan{
@@ -475,6 +505,8 @@ footer{
         position: relative;
         order: 5;
         border: 0;
+        margin-bottom: 0;
+        top: 130vh;
     }
 
     
