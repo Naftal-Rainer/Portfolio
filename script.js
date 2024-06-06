@@ -226,7 +226,7 @@ proj.addEventListener('click', () => {
 });
 
 // Download Resume
-
+butt[2].disable = true;
 butt[2].addEventListener('click', () => {
     window.open('Naftal Rainer Resume.pdf', '_blank');
 })
